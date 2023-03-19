@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
-#include <studio.h>
 /* more headers goes there */
-
+#include <studio.h>
 /* betty style doc for function main goes there */
+/**
+ * main - main function
+ *
+ * return: always 0
+ */
+
 int main(void)
 {
 	int n;
@@ -11,6 +16,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
+	/* your code goes there */	
         {
 		printf("%d is positive\n", n);
 	}
