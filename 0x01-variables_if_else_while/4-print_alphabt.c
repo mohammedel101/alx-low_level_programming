@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Print all numbers of base 10, starting from 0.
+ * Description: Use `putchar` to print all letters but the letter 'q' and 'e'.
  * Return: 0
  */
 int main(void)
 {
-	int i;
+	char c = 'a';
 
-	for (i = 0; i < 10; i++)
+	while (c <= 'z')
 	{
-		printf("%i", i);
+		if (c != 'q' && c != 'e')
+			putchar(c);
+		c++;
 	}
 	putchar('\n');
 
